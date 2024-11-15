@@ -32,6 +32,8 @@ const Newsapp = () => {
   const fetchHealthNews = () => setSearch('health');
   const fetchFitnessNews = () => setSearch('fitness');
 
+  const trendingnews = () => setSearch('trending');
+  const AllNews = () => setSearch('All news');
   return (
     <div>
       <nav>
@@ -39,8 +41,8 @@ const Newsapp = () => {
           <h1>Trending News</h1>
         </div>
         <ul>
-          <button>All news</button>
-          <button>Trending news</button>
+          <button onClick={AllNews}>All news</button>
+          <button onClick={trendingnews}>Trending news</button>
         </ul>
         <div className='search-bar'>
           <input type='text' placeholder='Search news' onChange={handleInput} />

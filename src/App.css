@@ -138,3 +138,128 @@ nav ul {
   .cardcontent button:hover {
     background-color: #005bb5;
   }
+
+  /* Default styles are for large screens. */
+
+/* For medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 12px;
+  }
+  nav ul {
+      flex-direction: column;
+      gap: 8px;
+  }
+  nav input {
+      width: 100%;
+  }
+  nav .opay {
+      width: auto;
+      align-self: stretch;
+  }
+  .head {
+      font-size: 30px;
+  }
+  .cardcontainer {
+      gap: 20px;
+  }
+  .card {
+      width: 100%;
+      max-width: 300px;
+  }
+  .category {
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+  .category button {
+      width: auto;
+      padding: 8px 12px;
+  }
+}
+
+/* For small screens (mobile) */
+@media screen and (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 10px;
+  }
+  nav ul {
+      flex-direction: column;
+      gap: 5px;
+  }
+  nav input {
+      width: 100%;
+      font-size: 16px;
+  }
+  nav .opay {
+      width: auto;
+      padding: 6px;
+  }
+  .head {
+      font-size: 24px;
+  }
+  .cardcontainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+  .card {
+      width: 90%;
+      max-width: 300px;
+  }
+  .category {
+      flex-wrap: wrap;
+      gap: 5px;
+  }
+  .category button {
+      font-size: 13px;
+      padding: 5px 8px;
+  }
+  .cardcontent a {
+      font-size: 16px;
+  }
+  .cardcontent p {
+      font-size: 12px;
+  }
+  .cardcontent button {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+}
+
+/* For extra small screens (very small mobile devices) */
+@media screen and (max-width: 480px) {
+  nav {
+      padding: 8px;
+  }
+  nav ul {
+      gap: 3px;
+  }
+  nav input {
+      font-size: 14px;
+  }
+  nav .opay {
+      padding: 5px;
+      font-size: 14px;
+  }
+  .head {
+      font-size: 20px;
+  }
+  .card {
+      width: 100%;
+      max-width: 250px;
+  }
+  .cardcontent a {
+      font-size: 14px;
+  }
+  .cardcontent p {
+      font-size: 11px;
+  }
+  .cardcontent button {
+      padding: 5px 8px;
+      font-size: 11px;
+  }
+}
